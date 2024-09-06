@@ -1,0 +1,50 @@
+import math
+
+def tesk18(x, y, z, w):# x - объем байтов, y - кол-во страниц, z - кол-во строк, w - кол-во символов
+    h = 2**(x * 8 / (y * z * w))
+    return int(h)
+
+def tesk19(x, y):
+    z = math.log2(x) / math.log2(y)
+    return float(z)
+
+def tesk20(x,y):
+    z = y / (math.log2(x))
+    return int(z)
+
+def tesk199(x):
+    z = 2 ** x
+    return int(z)
+
+def tesk200(x):
+    z = 2 ** x
+    return int(z)
+
+def tesk7(x, y):
+    z = ((2 ** y) * x) / y
+    return int(z)
+    
+if __name__ == "__main__": 
+    #x = int(input("Enter the volume of bytes: "))
+    #y = int(input("Enter the number of pages: "))
+    #z = int(input("Enter the number of lines: "))
+    #w = int(input("Enter the number of characters: "))
+    #print(tesk18(x, y, z, w), "символов")
+
+    #x = int(input('Мощность первого афавита: '))
+    #y = int(input('Мощность второго алфавита: '))
+    #print(tesk19(x, y), " разница в можности")
+
+    #x = int(input("кол-во символов: "))
+    #y = int(input("кол-во бит: "))
+    #print(tesk20(x, y), "символов в данном сообщении")
+
+    #x = int(input("кол-во бит: "))
+    #print(tesk199(x), "этажей")
+
+    #x = int(input("кол-во бит: "))
+    #print(tesk200(x), "подъездов")
+
+    x = int(input("сколько потратили синих банок краски: "))
+    y = int(input("коль-во бит белой краски: "))
+    print(tesk7(x, y), "коринчнивых банок")
